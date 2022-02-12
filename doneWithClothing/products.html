@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    top: 85px;
+    position: absolute;
+    background: beige;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.items{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.item{
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: white;
+}
+
+.item .title{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(47, 194, 194);
+    top: 0;
+    position: absolute;
+    background: green;
+    border-radius: 5px 5px 0 0;
+}
+
+.item img{
+    width: 97%;
+    height: 160px;
+    position: absolute;
+    border-radius: 5px;
+    top: 20px;
+    margin-top: 2px;
+    object-fit: cover;
+}
+.item .description{
+    width: 97%;
+    height: 70px;
+    position: absolute;
+    bottom: 40px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background: rgb(177, 99, 177);
+    
+}
+
+.item .actions{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 0 5px 5px;
+    background: green;
+}
+
+.actions .user-actions{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    margin: 3px;
+    left: 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user-actions div:not(.sales){
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    
+}
+
+.user-actions div:nth-last-child(1){
+    width: 65px;
+    height: 35px;
+    margin: 0 0 0 5px;
+    background: rgb(245, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.actions button{
+    width: 90px;
+    height: 35px;
+    margin: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(47, 194, 194);
+    background: yellow;
+    border: none;
+    position: absolute;
+    right:0;
+}
+
+.actions button:hover{
+    background: rgb(199, 199, 16);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+            <div class="item">
+                    <div class="title">WordPress development</div>
+                    <img src="dadada.png" alt="..">
+                    <div class="description">Lorem ipsum</div>
+                    <div class="actions">
+                        <div class="user-actions">
+                            <div class="like">Like</div>
+                            <div class="share">Share</div> 
+                            <div class="sales">Sales: <span>30</span></div>                           
+                        </div>
+                        <button class="booking">Book now</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+</body>
+</html>
